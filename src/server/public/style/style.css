@@ -1,0 +1,17 @@
+.body
+{
+    background: rgb(255, 224, 68) ;
+    background-size:cover;
+}
+#panel
+{
+    background-color:white;
+    width: 75%;
+    position:text-center;
+    margin-left: auto;
+    margin-right: auto;
+}
+#navbar
+{
+    background-color:white;
+}

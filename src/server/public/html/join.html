@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>🤖 - Play</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style/style.css">
+
+</head>
+<body class="body">
+<div class="px-4 py-5 my-5 text-center center-block">
+    <div class="row justify-content-md-center" id="error"></div>
+    
+    <div id="panel" class="card" style="border-radius: 20px;">
+        <div class="card-body" style="padding-left: 100px; padding-right: 100px; padding-bottom: 30px;">
+            <h1 class="display-5" style="margin-top: 20px; margin-bottom: 20px;">Guess The IA</h1>
+            
+            <div class="col-12">
+                <div class="input-group">
+                    <span class="input-group-text" id="basic-addon1">@</span>
+                    <input id="username_input" type="text" class="form-control col-lg-4" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-6">
+                    <button type="button" id="create" class="btn btn-warning">Create room</button>
+                </div>
+                <div class="col-5">
+                    <div class="input-group">
+                        <button type="button" id="join" class="btn btn-warning">Join room</button>
+                        <input  type="text"  id="room_code" class="form-control" placeholder="Code" aria-label="roomId" aria-describedby="basic-addon1">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="./js/join.js"></script>
+</div>
+</body>
+</html>
+
+
