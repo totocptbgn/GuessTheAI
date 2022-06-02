@@ -13,19 +13,19 @@ Attention, les commandes sont à éxécuter dans le répertoire `src/server`.
 cd src/server
 ```
 
-- Pour installer les dépendances de Node.js :
+Pour installer les dépendances de Node.js :
 
 ```sh
 npm install express canvas numjs socket.io cli-progress colors @tensorflow/tfjs-node
 ```
 
-- Pour télécharger les modèles de `sketch_rnn` et setup le repertoire de génération :
+Pour télécharger les modèles de `sketch_rnn` et setup le repertoire de génération :
 
 ```sh
 mkdir generated && mkdir sketch_rnn_model_data && python3 ../notebooks/download_decoder_models.py
 ```
 
-- Pour mettre en place les clés de chiffrements pour le HTTPS :
+Pour mettre en place les clés de chiffrements pour le HTTPS :
 
 ```sh
 mkdir key && cd key && openssl req -x509 -newkey rsa:2048 -keyout keytmp.pem -out cert.pem -days 365
@@ -161,10 +161,3 @@ Connectez vous à https://localhost:3000/ et jouez !
 - [Cli-progress](https://www.npmjs.com/package/cli-progress) pour afficher des barres de chargement.
 - [Colors.js](https://www.npmjs.com/package/colors) pour collorer les affichages.
 - [TensorFlow.js](https://www.npmjs.com/package/@tensorflow/tfjs-node) pour exécuter le modèle de classification.  
-
-
-## Documents
-
-- [Présentation initiale du projet](docs/presentation.md)
-- [Journal de bord](docs/journal.org)
-- [Transparent de présentation](presentation-bignon-wang.pdf)
